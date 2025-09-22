@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal CV/Portfolio Landing Page - Modern, Responsive, Interactive" />
+  <title>Dimas Saputra | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .sticky-nav { backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-white to-gray-50 text-gray-800 dark:from-gray-900 dark:to-gray-800 dark:text-gray-100">
+  <!-- HEADER -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all">
+    <nav class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-semibold">DS</div>
+          <span class="font-semibold text-lg">Dimas Saputra</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="darkToggle" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">☀️</button>
+      </div>
+      <div class="md:hidden flex items-center gap-3">
+        <button id="darkToggleMobile" class="p-2 rounded-md">☀️</button>
+        <button id="menuBtn" class="p-2 rounded-md border">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 border-t shadow-sm"></div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="pt-24 max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Dimas Saputra</h1>
+      <p class="text-lg md:text-xl mt-4">Web Developer · UI/UX Enthusiast — I build clean, accessible web apps with delightful UX.</p>
+      <div class="flex items-center gap-4 mt-6">
+        <a href="resume.pdf" class="px-5 py-2 rounded-lg shadow-md bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium">Download CV</a>
+        <a href="#contact" class="px-5 py-2 rounded-lg border border-indigo-300 dark:border-gray-600">Hire Me</a>
+      </div>
+      <div class="mt-6 flex items-center gap-3 text-sm">
+        <span class="font-medium">Find me:</span>
+        <a href="https://linkedin.com/" class="underline">LinkedIn</a>
+        <a href="https://github.com/" class="underline">GitHub</a>
+        <a href="https://instagram.com/" class="underline">Instagram</a>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <img src="Dimas alat.jpg" style="object-fit: cover;" class="w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-indigo-400 shadow-lg" alt="Profile" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8 items-center">
+    <div class="md:col-span-1 flex justify-center">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80" class="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover shadow-lg" alt="About" />
+    </div>
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-semibold mb-3">About Me</h2>
+      <p class="text-gray-600 dark:text-gray-300">Saya adalah seorang Web Developer dengan pengalaman membuat aplikasi frontend yang responsif dan aksesibel.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><div class="text-sm text-gray-500">Nama</div><div class="font-medium">Dimas Saputra</div></div>
+        <div><div class="text-sm text-gray-500">Email</div><div class="font-medium">dimas@example.com</div></div>
+        <div><div class="text-sm text-gray-500">Phone</div><div class="font-medium">+62 812 3456 7890</div></div>
+        <div><div class="text-sm text-gray-500">Alamat</div><div class="font-medium">Jakarta, Indonesia</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-6">Skills</h3>
+    <div class="space-y-4">
+      <div>
+        <div class="flex justify-between mb-1"><span>HTML/CSS</span><span>95%</span></div>
+        <div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-indigo-500 h-3 rounded-full" style="width:95%"></div></div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1"><span>JavaScript</span><span>90%</span></div>
+        <div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-indigo-500 h-3 rounded-full" style="width:90%"></div></div>
+      </div>
+      <div>
+        <div class="flex justify-between mb-1"><span>React</span><span>88%</span></div>
+        <div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-indigo-500 h-3 rounded-full" style="width:88%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-6">Experience & Education</h3>
+    <div class="space-y-8">
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow">
+        <div class="font-semibold">Frontend Developer - ABC Tech (2023 - Present)</div>
+        <p class="text-sm mt-2">Membangun aplikasi web menggunakan React dan TailwindCSS.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow">
+        <div class="font-semibold">Intern Web Dev - Startup XYZ (2022 - 2023)</div>
+        <p class="text-sm mt-2">Membantu pengembangan landing page dan fitur pembayaran.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-6">Portfolio</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=60" class="w-full h-40 object-cover rounded" />
+        <div class="font-semibold mt-3">Company Website</div>
+        <p class="text-sm text-gray-500">Corporate website with CMS</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow">
+        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&q=60" class="w-full h-40 object-cover rounded" />
+        <div class="font-semibold mt-3">Mobile App UI</div>
+        <p class="text-sm text-gray-500">UI concept for finance app</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-6">Contact</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Name" class="w-full p-2 rounded-md border" required />
+      <input type="email" placeholder="Email" class="w-full p-2 rounded-md border" required />
+      <textarea placeholder="Message" class="w-full p-2 rounded-md border" rows="4" required></textarea>
+      <button class="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-md">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t py-6 text-center text-sm">
+    © <span id="year"></span> Dimas Saputra. All rights reserved.
+  </footer>
+
+  <script>
+    // Sticky Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 20) navbar.classList.add('sticky-nav','bg-white/60','shadow-sm');
+      else navbar.classList.remove('sticky-nav','bg-white/60','shadow-sm');
+    });
+
+    // Dark Mode
+    const darkToggle = document.getElementById('darkToggle');
+    const darkToggleMobile = document.getElementById('darkToggleMobile');
+    const html = document.documentElement;
+    function toggleDark(){html.classList.toggle('dark');}
+    darkToggle.addEventListener('click', toggleDark);
+    darkToggleMobile.addEventListener('click', toggleDark);
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', ()=>{
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.innerHTML = `
+        <div class='flex flex-col px-6 py-4 gap-3'>
+          <a href='#about'>About</a>
+          <a href='#skills'>Skills</a>
+          <a href='#portfolio'>Portfolio</a>
+          <a href='#experience'>Experience</a>
+          <a href='#contact'>Contact</a>
+        </div>`;
+    });
+  </script>
+</body>
+</html>
